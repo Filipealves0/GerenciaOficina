@@ -22,7 +22,7 @@ public class Veiculo {
         this.cliente = cliente;
     }
 
-    public String getPlaca() {
+    public  String getPlaca() {
         return placa;
     }
 
@@ -45,4 +45,11 @@ public class Veiculo {
     public void setAno(Integer ano) {
         this.ano = ano;
     }
+
+    public void exibirInfoVeiculo() {
+        System.out.println("Cliente: " + cliente.getNome() +
+                "Placa :" + getPlaca() + "Modelo: " + getModelo());
+    }
+
+
 }

@@ -16,7 +16,8 @@ public class OrdemDeServico  {
     private Double valorServicoTotal;
 
 
-    public OrdemDeServico(Cliente cliente, Veiculo veiculo, StatusService statusService) {
+    public OrdemDeServico(Integer id,Cliente cliente, Veiculo veiculo, StatusService statusService) {
+        this.id = id;
         this.cliente = cliente;
         this.veiculo = veiculo;
         this.servicos =  new ArrayList<>();
@@ -65,7 +66,7 @@ public class OrdemDeServico  {
         }
     }
 
-    public void ExibirServico() {
+    public List<OrdemDeServico> ExibirServico() {
         System.out.println("Ordem ID: " + id);
         System.out.println("Cliente: " + cliente.getNome());
         System.out.println("Veículo: " + veiculo.getModelo() + " - " + veiculo.getPlaca());
@@ -75,5 +76,6 @@ public class OrdemDeServico  {
         }
         System.out.println("Valor total: R$ " + valorServicoTotal);
         System.out.println("-------------------------------");
+        return null;
     }
 }

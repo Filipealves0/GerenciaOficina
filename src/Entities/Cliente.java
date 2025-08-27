@@ -8,7 +8,8 @@ public class Cliente {
     private String email;
     private String endereco;
 
-
+    public Cliente() {
+    }
     public Cliente(Integer id, String nome, Integer telefone, String email, String endereco) {
         this.id = id;
         this.nome = nome;

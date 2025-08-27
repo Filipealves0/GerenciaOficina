@@ -7,6 +7,7 @@ public class Veiculo {
     private String modelo;
     private Integer ano;
 
+    public Veiculo() {}
     public Veiculo(Cliente cliente, String placa, String modelo, Integer ano) {
         this.cliente = cliente;
         this.placa = placa;
